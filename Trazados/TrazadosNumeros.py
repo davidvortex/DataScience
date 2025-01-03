@@ -1,6 +1,6 @@
 import plotly.graph_objects as iniciar
 fig = iniciar.Figure()
-mi_trazado = iniciar.Satter (
+mi_trazado = iniciar.Scatter (
     x=[1,2,3,4,5],
     y=[10,11,12,13,14],
     mode = "markers"
@@ -9,7 +9,7 @@ mi_trazado = iniciar.Satter (
 fig.add_trace(mi_trazado)
 
 ########################### Definir el trazado de mi linea
-mi_trazado = iniciar.Satter (
+mi_trazado = iniciar.Scatter(
     x=[1,2,3,4,5],
     y=[10,11,12,13,14],
     mode = "markers"
@@ -26,9 +26,9 @@ mi_trazado = iniciar.Layout(
     yaxis = dict(tittle='eje de las y')
 )
 
-########################## no tamos las atualizaciones del punto
+########################## no tomamos las atualizaciones del punto
 
-trazado_barras = go.Bar( x=[1,2,3,4,5],
+trazado_barras = iniciar.Bar( x=[1,2,3,4,5],
                         y=[10,11,12,13,14]
                         )
 fig.add.trace(trazado_barras)

@@ -44,7 +44,7 @@ fig3.update_layout(
 )
 
 
-###############  grafico para hacer lineas
+###############  grafico para hacer grafico de pastel o circular
 fig4 = iniciar.Figure()
 
 fig4.add_trace(iniciar.Pie(labels=['a','b','c','d'],
@@ -55,3 +55,15 @@ fig4.update_layout(
     xaxis = dict(tittle='Eje X'), # este sera mi suptitulo para la aprte de las X
     yaxis = dict(tittle='Eje y')  # este sera mi suptitulo para la aprte de las y
 )
+
+################
+data = iniciar.Histograma(x = [1,2,2,3,3,3,4],)
+fig5 = iniciar.Figure(data = data)
+fig5.update_layout(tittle='Histograma')
+
+
+
+
+
+
+
