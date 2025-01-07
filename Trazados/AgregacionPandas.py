@@ -1,0 +1,10 @@
+import pandas as pd
+numeros = pd.Series([10,20,30,40,50])
+promedio = numeros.mean()
+print(f"El promedio es:{promedio}")
+total = numeros.sum()
+print(f"La suma de los numero es: {total}")
+maximo = numeros.max()
+print(maximo)
+minimo = numeros.min()
+print(minimo)
