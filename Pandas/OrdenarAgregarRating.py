@@ -1,4 +1,5 @@
 import pandas as pd
+
 datos = {
     'titulo': ['Pelicula A', 'Pelicula B', 'Pelicula C', 'Pelicula D'],
     'año': [2001, 2000, 2005, 2010],
@@ -6,5 +7,5 @@ datos = {
 }
 
 df = pd.DataFrame(datos)
-df_ordenado = df.sort_values(by='año', ascending=True)
-
+df_ordenado = df.sort_values(by=['rating', 'año'], ascending=[False, True])
+print(df_ordenado)
