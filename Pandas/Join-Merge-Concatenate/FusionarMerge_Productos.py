@@ -13,3 +13,4 @@ reviews = pd.DataFrame({
 })
 
 productos_reviews = pd.merge(productos, reviews, left_index=True, right_index=True)
+print(productos_reviews)
