@@ -10,3 +10,4 @@ autores = pd.DataFrame({
 })
 
 libros_autores = pd.merge(libros,autores, how = 'outer')
+
